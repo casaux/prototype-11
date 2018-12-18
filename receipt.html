@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>myCASA</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/furnace.min.css">
+	<!--<link rel="stylesheet" href="css/lead.css">-->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="live-demo au-body au-grid js">
+<main class="au-grid">
+	
+	
+      <header class="au-header logo au-body au-body--dark" role="banner">
+        <div class="header">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-xs-7">
+                <a class="au-header__brand" href="dashboard-wendy.html#save">
+                  <img class="au-header__brand-image" alt="my CASA" src="img/CASALOGO-white-i.svg" width="300">
+                </a>
+              </div>
+              <div class="col-md-3 col-xs-5"><a class="au-btn au-btn--dark" href="mycasa-renew.html">Sign out</a></div>
+
+
+
+      		</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+	
+		
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	<div class="body">
+
+		<div class="container">
+
+			
+
+			<div class="col-xs-6">
+
+				
+
+			<nav class="au-breadcrumbs" aria-label="breadcrumb">
+
+			  <ul class="au-link-list au-link-list--inline">
+
+				<li><a href="welcome.html">myCASA</a></li>
+
+				<li>RPA registration</li>
+
+			  </ul>
+
+			</nav>	
+	
+
+					<div role="alert" class="au-body au-page-alerts au-page-alerts--success">
+  				<h3>Application submitted</h3>
+					<ul>
+						<li>Payment succeessful</li>
+						<li>RPA registration has been submitted</li>
+					<ul>
+				  </div>
+					<h2 class="au-display-xl">RPA Registration</h2>
+					<p class="m-t-1">
+						Thank you Bob,<br><br>
+You have successfully registered your drone and can now legally fly your drone.<br><br>
+
+If you need any further advice on where you are legally allowed to fly. Please download our app ‘Can I Fly There?’<br><br>
+						A copy of the invoice and RPA registration  has been sent to your email address bob.furzer@gmail.com</p><br>
+
+
+					<p><a href="welcome-licence.html" class="au-direction-link" id="dashboard">Go to dashboard</a></p>
+		</div>
+	</div>
+</div>
+</main>
+<footer class="footer">
+		<div class="footer-wrapper">
+			<iframe src="footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+</footer>
+<script type="text/javascript" src="js/furnace.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script>
+var type = window.location.hash.substr(1);
+if(type=='renew'){
+	$('a.renew, .renew-li').remove();
+	$('a#bread-home').attr("href", "dashboard-org.html#save").text("Wendy's Wedding");
+	$('#dashboard').attr("href", "dashboard-wendy.html#renewed");
+	//$('a#next').attr("href", "payment.html#renew");
+}
+</script>
+</body>
+</html>
